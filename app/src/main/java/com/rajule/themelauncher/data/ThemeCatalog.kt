@@ -33,31 +33,27 @@ private fun buildPages(
     page2Apps: List<Pair<AppRole, String>>,
     photoNames: List<String>
 ): List<List<GridItem>> {
-    val (a1, a2, a3, a4, a5, a6, a7, a8) = page1Apps
-    val (b1, b2, b3, b4, b5, b6, b7, b8) = page2Apps
+    fun app(list: List<Pair<AppRole, String>>, index: Int): TileContent =
+        TileContent.AppShortcut(list[index].first, list[index].second)
 
     val page1 = GridBuilder("p0")
         .block(2, 4 to TileContent.Clock)
         .block(2, 2 to firstWidget, 2 to TileContent.Battery)
-        .block(1, 1 to TileContent.AppShortcut(a1.first, a1.second), 1 to TileContent.AppShortcut(a2.first, a2.second), 2 to TileContent.Photo(photoNames[0]))
-        .block(1, 1 to TileContent.AppShortcut(a3.first, a3.second), 1 to TileContent.AppShortcut(a4.first, a4.second), 2 to TileContent.Weather)
-        .block(1, 1 to TileContent.AppShortcut(a5.first, a5.second), 1 to TileContent.AppShortcut(a6.first, a6.second), 1 to TileContent.AppShortcut(a7.first, a7.second), 1 to TileContent.AppShortcut(a8.first, a8.second))
+        .block(1, 1 to app(page1Apps, 0), 1 to app(page1Apps, 1), 2 to TileContent.Photo(photoNames[0]))
+        .block(1, 1 to app(page1Apps, 2), 1 to app(page1Apps, 3), 2 to TileContent.Weather)
+        .block(1, 1 to app(page1Apps, 4), 1 to app(page1Apps, 5), 1 to app(page1Apps, 6), 1 to app(page1Apps, 7))
         .build()
 
     val page2 = GridBuilder("p1")
         .block(2, 2 to secondWidget, 2 to TileContent.Photo(photoNames[1]))
-        .block(1, 1 to TileContent.AppShortcut(b1.first, b1.second), 1 to TileContent.AppShortcut(b2.first, b2.second), 1 to TileContent.AppShortcut(b3.first, b3.second), 1 to TileContent.AppShortcut(b4.first, b4.second))
+        .block(1, 1 to app(page2Apps, 0), 1 to app(page2Apps, 1), 1 to app(page2Apps, 2), 1 to app(page2Apps, 3))
         .block(2, 2 to TileContent.Photo(photoNames[2]), 2 to TileContent.Photo(photoNames[3]))
-        .block(1, 1 to TileContent.AppShortcut(b5.first, b5.second), 1 to TileContent.AppShortcut(b6.first, b6.second), 1 to TileContent.AppShortcut(b7.first, b7.second), 1 to TileContent.AppShortcut(b8.first, b8.second))
+        .block(1, 1 to app(page2Apps, 4), 1 to app(page2Apps, 5), 1 to app(page2Apps, 6), 1 to app(page2Apps, 7))
         .block(1, 4 to secondQuote)
         .build()
 
     return listOf(page1, page2)
 }
-
-private operator fun <T> List<T>.component6() = this[5]
-private operator fun <T> List<T>.component7() = this[6]
-private operator fun <T> List<T>.component8() = this[7]
 
 object ThemeCatalog {
 
