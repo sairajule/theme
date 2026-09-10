@@ -74,16 +74,16 @@ object ThemeCatalog {
             firstWidget = TileContent.Quote("Even if you don't realize it, you are moving forward."),
             secondWidget = TileContent.Calendar,
             secondQuote = TileContent.Quote("Slow down, the forest isn't in a hurry."),
-            page1Apps = listOf(
+            page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.SOCIAL to "Pinterest", AppRole.CHAT to "Messenger",
                 AppRole.CLOCK to "Alarm", AppRole.EMAIL to "Gmail",
                 AppRole.PHONE to "Phone", AppRole.BROWSER to "Browser", AppRole.MUSIC to "Music", AppRole.NOTES to "Notes"
             ),
-            page2Apps = listOf(
+            page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.VIDEO to "YouTube", AppRole.MAPS to "Maps", AppRole.STORE to "Store", AppRole.SETTINGS to "Settings",
                 AppRole.CALCULATOR to "Calculator", AppRole.CLOUD to "Cloud", AppRole.CAMERA to "Camera", AppRole.GALLERY to "Gallery"
             ),
-            photoNames = listOf("forest_a", "forest_b", "forest_c", "forest_d")
+            photoNames = listOf<String>("forest_a", "forest_b", "forest_c", "forest_d")
         ),
         dock = listOf(AppRole.CHAT, AppRole.CAMERA, AppRole.CLOUD, AppRole.LOCK)
     )
@@ -105,16 +105,16 @@ object ThemeCatalog {
             firstWidget = TileContent.Calendar,
             secondWidget = TileContent.Quote("Some days are just black and white."),
             secondQuote = TileContent.Quote("Draw your own outline."),
-            page1Apps = listOf(
+            page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.NOTES to "Notes", AppRole.MAPS to "Maps",
                 AppRole.STORE to "Store", AppRole.BROWSER to "Chrome",
                 AppRole.EMAIL to "Gmail", AppRole.CHAT to "Messages", AppRole.SETTINGS to "Settings", AppRole.PHONE to "Phone"
             ),
-            page2Apps = listOf(
+            page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.CLOCK to "Clock", AppRole.VIDEO to "YT Music", AppRole.SOCIAL to "Google", AppRole.CALCULATOR to "Calc",
                 AppRole.CHAT to "WhatsApp", AppRole.CLOUD to "Drive", AppRole.CAMERA to "Photos", AppRole.AT to "LinkedIn"
             ),
-            photoNames = listOf("mono_a", "mono_b", "mono_c", "mono_d")
+            photoNames = listOf<String>("mono_a", "mono_b", "mono_c", "mono_d")
         ),
         dock = listOf(AppRole.CHAT, AppRole.SOCIAL, AppRole.CAMERA, AppRole.LOCK)
     )
@@ -136,16 +136,16 @@ object ThemeCatalog {
             firstWidget = TileContent.Quote("You're in the best of me."),
             secondWidget = TileContent.Calendar,
             secondQuote = TileContent.Quote("Even lost in the fog, keep walking."),
-            page1Apps = listOf(
+            page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.MUSIC to "Music", AppRole.CHAT to "WhatsApp",
                 AppRole.SOCIAL to "Instagram", AppRole.BROWSER to "Browser",
                 AppRole.CAMERA to "Camera", AppRole.PHONE to "Phone", AppRole.MAPS to "Maps", AppRole.CLOUD to "Cloud"
             ),
-            page2Apps = listOf(
+            page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.EMAIL to "Mail", AppRole.NOTES to "Notes", AppRole.STORE to "Store", AppRole.SETTINGS to "Settings",
                 AppRole.CLOCK to "Clock", AppRole.CALCULATOR to "Calc", AppRole.VIDEO to "YouTube", AppRole.GALLERY to "Gallery"
             ),
-            photoNames = listOf("teal_a", "teal_b", "teal_c", "teal_d")
+            photoNames = listOf<String>("teal_a", "teal_b", "teal_c", "teal_d")
         ),
         dock = listOf(AppRole.PHONE, AppRole.CHAT, AppRole.BROWSER, AppRole.CAMERA)
     )
@@ -167,16 +167,16 @@ object ThemeCatalog {
             firstWidget = TileContent.Quote("Not everyone is available."),
             secondWidget = TileContent.Calendar,
             secondQuote = TileContent.Quote("Fear does not prevent death. It prevents life."),
-            page1Apps = listOf(
+            page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.SETTINGS to "Settings", AppRole.MAPS to "Maps",
                 AppRole.BROWSER to "Safari", AppRole.MUSIC to "Spotify",
                 AppRole.CHAT to "WhatsApp", AppRole.SOCIAL to "Snapchat", AppRole.STORE to "App Store", AppRole.AT to "Instagram"
             ),
-            page2Apps = listOf(
+            page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.CLOCK to "Clock", AppRole.CLOUD to "Health", AppRole.NOTES to "Notes", AppRole.CALCULATOR to "Calc",
                 AppRole.VIDEO to "YouTube", AppRole.EMAIL to "Mail", AppRole.CAMERA to "Camera", AppRole.GALLERY to "Photos"
             ),
-            photoNames = listOf("midnight_a", "midnight_b", "midnight_c", "midnight_d")
+            photoNames = listOf<String>("midnight_a", "midnight_b", "midnight_c", "midnight_d")
         ),
         dock = listOf(AppRole.PHONE, AppRole.CHAT, AppRole.BROWSER, AppRole.CAMERA)
     )
@@ -198,16 +198,16 @@ object ThemeCatalog {
             firstWidget = TileContent.Quote("A warrior must always be ready to face any challenge."),
             secondWidget = TileContent.Calendar,
             secondQuote = TileContent.Quote("Fear does not prevent death. It prevents life."),
-            page1Apps = listOf(
+            page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.SOCIAL to "TikTok", AppRole.AT to "Instagram",
                 AppRole.CHAT to "Messages", AppRole.PHONE to "Phone",
                 AppRole.CAMERA to "Gallery", AppRole.STORE to "Store", AppRole.MAPS to "Maps", AppRole.CLOUD to "Uber"
             ),
-            page2Apps = listOf(
+            page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.SETTINGS to "Settings", AppRole.CALCULATOR to "Calc", AppRole.NOTES to "Notes", AppRole.CLOCK to "Clock",
                 AppRole.MUSIC to "Music", AppRole.BROWSER to "Browser", AppRole.EMAIL to "Mail", AppRole.VIDEO to "Video"
             ),
-            photoNames = listOf("crimson_a", "crimson_b", "crimson_c", "crimson_d")
+            photoNames = listOf<String>("crimson_a", "crimson_b", "crimson_c", "crimson_d")
         ),
         dock = listOf(AppRole.CHAT, AppRole.PHONE, AppRole.CAMERA, AppRole.SOCIAL)
     )
