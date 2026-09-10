@@ -112,7 +112,7 @@ object ThemeCatalog {
             ),
             page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.CLOCK to "Clock", AppRole.VIDEO to "YT Music", AppRole.SOCIAL to "Google", AppRole.CALCULATOR to "Calc",
-                AppRole.CHAT to "WhatsApp", AppRole.CLOUD to "Drive", AppRole.CAMERA to "Photos", AppRole.AT to "LinkedIn"
+                AppRole.CHAT to "WhatsApp", AppRole.CLOUD to "Drive", AppRole.CAMERA to "Photos", AppRole.SOCIAL to "LinkedIn"
             ),
             photoNames = listOf<String>("mono_a", "mono_b", "mono_c", "mono_d")
         ),
@@ -170,7 +170,7 @@ object ThemeCatalog {
             page1Apps = listOf<Pair<AppRole, String>>(
                 AppRole.SETTINGS to "Settings", AppRole.MAPS to "Maps",
                 AppRole.BROWSER to "Safari", AppRole.MUSIC to "Spotify",
-                AppRole.CHAT to "WhatsApp", AppRole.SOCIAL to "Snapchat", AppRole.STORE to "App Store", AppRole.AT to "Instagram"
+                AppRole.CHAT to "WhatsApp", AppRole.SOCIAL to "Snapchat", AppRole.STORE to "App Store", AppRole.SOCIAL to "Instagram"
             ),
             page2Apps = listOf<Pair<AppRole, String>>(
                 AppRole.CLOCK to "Clock", AppRole.CLOUD to "Health", AppRole.NOTES to "Notes", AppRole.CALCULATOR to "Calc",
@@ -199,7 +199,7 @@ object ThemeCatalog {
             secondWidget = TileContent.Calendar,
             secondQuote = TileContent.Quote("Fear does not prevent death. It prevents life."),
             page1Apps = listOf<Pair<AppRole, String>>(
-                AppRole.SOCIAL to "TikTok", AppRole.AT to "Instagram",
+                AppRole.SOCIAL to "TikTok", AppRole.SOCIAL to "Instagram",
                 AppRole.CHAT to "Messages", AppRole.PHONE to "Phone",
                 AppRole.CAMERA to "Gallery", AppRole.STORE to "Store", AppRole.MAPS to "Maps", AppRole.CLOUD to "Uber"
             ),
